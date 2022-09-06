@@ -34,8 +34,8 @@
                     <input id="name" name="NAME" type="text" placeholder="Nome">
                     <input id="email" name="EMAIL" type="text" placeholder="E-mail">
                     <input id="telefone" name="TELEFONE" type="text" placeholder="Telefone">
-                    <input id="cidade" name="cidade" type="text" placeholder="Cidade">
-                    <select name="PLACE">
+                    <input id="cidade" name="CIDADE" type="text" placeholder="Cidade">
+                    <select name="NAME">
                         <option value="an">Desenvolvimento Web</option>
                         <option value="rn">Infraestrutura de Rede</option>
                         <option value="p">Suporte Técnico</option>
