@@ -36,9 +36,9 @@
                     <input id="telefone" name="TELEFONE" type="text" placeholder="Telefone">
                     <input id="cidade" name="CIDADE" type="text" placeholder="Cidade">
                     <select name="NAME">
-                        <option value="dw">Desenvolvimento Web</option>
-                        <option value="ir">Infraestrutura de Rede</option>
-                        <option value="st">Suporte Técnico</option>
+                        <option value="an">Desenvolvimento Web</option>
+                        <option value="rn">Infraestrutura de Rede</option>
+                        <option value="p">Suporte Técnico</option>
                     </select>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_353e5aadfbd220828bad3640c_8c4c54c33e" tabindex="-1" value=""></div>
