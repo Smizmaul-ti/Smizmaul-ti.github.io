@@ -29,7 +29,7 @@
 
 
                 <form method="post"
-                        action="https://linktr.ee/Smizmaul id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+                       <form action="https://linktr.us11.list-manage.com/subscribe/post?u=353e5aadfbd220828bad3640c&amp;id=8c4c54c33e&amp;f_id=003997e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
 
                     <input id="name" name="NAME" type="text" placeholder="Nome">
                     <input id="email" name="EMAIL" type="text" placeholder="E-mail">
