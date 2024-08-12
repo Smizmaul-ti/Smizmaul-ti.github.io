@@ -1,77 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="./images/Simbol Smizmaul BG.png" type="image/png">
-<title>Smizmaul Soluções</title>
-<link rel="stylesheet" type="text/css" href="./style.css">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Simbol Smizmaul BG.png" type="image/png">
+    <title>Smizmaul Soluções</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
+    <!-- Melhorias: Inclusão de fontes externas e ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-
     <div class="container">
         <header>
-
-            <h1 class="title"> Smizmaul Soluções de Tecnologia e Desenvolvimento
-            </h1>
-
+            <!-- Adicionando uma barra de navegação simples -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <h1 class="title">Smizmaul Soluções de Tecnologia e Desenvolvimento</h1>
         </header>
 
-        <section>
-
+        <section id="contact">
             <div class="formContainer">
-                <h2 class="mb">PARA MAIORES INFORMAÇÕES PREENCHA O FORMULÁRIO ABAIXO:</h2>
-                <p class="mb">São mais de 5 anos de experiência em atendimento ao cliente e soluções técnicas com
-                    resultados sólidos e eficazes.</p>
-                </p>
+                <h2 class="mb">Para mais informações, preencha o formulário abaixo:</h2>
+                <p class="mb">São mais de 5 anos de experiência em atendimento ao cliente e soluções técnicas com resultados sólidos e eficazes.</p>
 
-
-                <form method="post"
+                <form 
                     action="https://github.us8.list-manage.com/subscribe/post?u=ddb5585add15fba52b1ed5bd0&amp;id=b3695f6841&amp;f_id=00806fe0f0"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    method="post" 
+                    id="mc-embedded-subscribe-form" 
+                    name="mc-embedded-subscribe-form" 
+                    class="validate"
                     target="_self">
 
-                    <input id="name" name="NAME" type="text" placeholder="Nome">
-                    <input id="email" name="EMAIL" type="text" placeholder="E-mail">
-                    <input id="telefone" name="TELEFONE" type="text" placeholder="Telefone">
-                    <input id="cidade" name="CIDADE" type="text" placeholder="Cidade">
-                    <select name="NAME">
-                        <option value="an">Desenvolvimento Web</option>
-                        <option value="rn">Infraestrutura de Rede</option>
-                        <option value="p">Suporte Técnico</option>
+                    <label for="name">Nome:</label>
+                    <input id="name" name="NAME" type="text" placeholder="Nome" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="EMAIL" type="email" placeholder="E-mail" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" name="TELEFONE" type="tel" placeholder="Telefone" required>
+                    
+                    <label for="cidade">Cidade:</label>
+                    <input id="cidade" name="CIDADE" type="text" placeholder="Cidade" required>
+                    
+                    <label for="servico">Serviço de interesse:</label>
+                    <select id="servico" name="SERVICO" required>
+                        <option value="dev">Desenvolvimento Web</option>
+                        <option value="network">Infraestrutura de Rede</option>
+                        <option value="support">Suporte Técnico</option>
                     </select>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                            name="b_353e5aadfbd220828bad3640c_8c4c54c33e" tabindex="-1" value=""></div>
-                    <input type="submit" value=" INSCREVA-SE">
+                    
+                    <!-- Proteção contra bots -->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_353e5aadfbd220828bad3640c_8c4c54c33e" tabindex="-1" value="">
+                    </div>
 
+                    <input type="submit" value="Inscreva-se" class="btn-submit">
                 </form>
+            </div>
         </section>
-        <footer>
-            <img class="picture" src="images/Lucas.jpg">
-            <div class="description">
-                <h3>Lucas Smizmaul</h3>
-                <p> Meu foco é ampliar meus conhecimentos de forma constante. <br>Faça sua cotação de serviço sem
-                    compromisso.
-                </p>
 
+        <footer>
+            <div class="footer-content">
+                <img class="picture" src="images/Lucas.jpg" alt="Lucas Smizmaul">
+                <div class="description">
+                    <h3>Lucas Smizmaul</h3>
+                    <p>Meu foco é ampliar meus conhecimentos de forma constante. <br>Faça sua cotação de serviço sem compromisso.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </footer>
-
-
     </div>
 
-
-
-
-
-
-
-
-
 </body>
-
 </html>
