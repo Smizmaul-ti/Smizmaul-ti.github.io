@@ -1,20 +1,25 @@
-CSS * {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Adicionado para melhor controle do layout */
 }
 
+/* Estilo do corpo */
 body {
-
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    color: white; /* Para garantir que o texto seja visível sobre o fundo preto */
 }
 
+/* Container principal */
 .container {
     max-width: 1000px;
     margin: auto;
+    padding: 20px; /* Adicionado padding para evitar que o conteúdo encoste nas bordas */
 }
 
-
+/* Estilo do cabeçalho */
 header {
     background-color: #947f57;
     text-align: center;
@@ -26,6 +31,7 @@ header {
     font-size: 27px;
 }
 
+/* Estilo da seção principal */
 section {
     padding: 20px;
     background-image: url(images/hd_3.jpg);
@@ -33,11 +39,13 @@ section {
     overflow: hidden;
 }
 
+/* Estilo do formulário */
 .formContainer {
     max-width: 300px;
     background-color: #ffffffbb;
     padding: 20px;
     float: right;
+    margin: 0 0 20px 20px; /* Adicionado margin para afastar o formulário da borda */
 }
 
 h2 {
@@ -48,10 +56,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Estilo dos inputs e select */
 input,
 select {
     width: 100%;
-    box-sizing: border-box;
     padding: 10px;
     border: none;
     margin-bottom: 10px;
@@ -61,6 +69,7 @@ input[type="submit"] {
     color: white;
     background-color: #947f57;
     font-weight: bold;
+    cursor: pointer; /* Adicionado para melhorar a UX */
 }
 
 select {
@@ -73,18 +82,19 @@ select {
     background-size: 20px;
 }
 
+/* Estilo da imagem no rodapé */
 .picture {
     width: 200px;
 }
 
-
+/* Estilo do rodapé */
 footer {
-
     background-color: #947f57;
     padding: 40px;
     text-align: center;
 }
 
+/* Estilo da descrição */
 .description {
     color: white;
     display: inline-block;
@@ -102,4 +112,46 @@ footer {
     font-size: 30px;
 }
 
-@media screen and (max-width: 400px) {}
+/* Estilo para alinhar o texto ao lado da imagem e centralizá-lo */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content .picture {
+    border-radius: 50%; /* Cantos arredondados */
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    object-fit: cover; /* Garantir que a imagem cubra a área */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.footer-content .description {
+    max-width: 300px; /* Largura máxima para o texto */
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 400px) {
+    .formContainer {
+        float: none;
+        margin: 0 auto; /* Centraliza o formulário em telas pequenas */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Empilha a imagem e o texto */
+    }
+
+    .footer-content .picture {
+        margin-right: 0; /* Remove a margem lateral em telas pequenas */
+        margin-bottom: 20px; /* Adiciona margem inferior para separar a imagem do texto */
+    }
+
+    .description {
+        max-width: 100%; /* Largura total em telas pequenas */
+        margin-left: 0;
+        text-align: center; /* Centraliza o texto */
+    }
+}
