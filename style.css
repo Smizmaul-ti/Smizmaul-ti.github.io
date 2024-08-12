@@ -22,13 +22,49 @@ body {
 /* Estilo do cabeçalho */
 header {
     background-color: #947f57;
-    text-align: center;
     color: white;
     padding: 10px;
+    position: relative; /* Necessário para posicionar os ícones sociais */
 }
 
+/* Estilo do conteúdo do cabeçalho */
+.header-content {
+    display: flex;
+    flex-direction: row; /* Alinha o título e os ícones horizontalmente */
+    align-items: center;
+    justify-content: space-between; /* Espaça o título e os ícones */
+}
+
+/* Estilo do título no cabeçalho */
 .title {
-    font-size: 27px;
+    margin: 0;
+}
+
+/* Estilo dos botões sociais no cabeçalho */
+.social-buttons {
+    display: flex;
+    flex-direction: column; /* Empilha os ícones verticalmente */
+    align-items: center;
+}
+
+.social-buttons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px 0; /* Espaço vertical entre os ícones */
+    background-color: white; /* Fundo dos ícones sociais */
+    border-radius: 50%; /* Forma circular dos ícones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Adicionado sombra para melhorar a visibilidade */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo da imagem dos ícones sociais */
+.social-buttons a img {
+    width: 24px; /* Ajuste o tamanho do ícone aqui */
+    height: 24px; /* Ajuste o tamanho do ícone aqui */
 }
 
 /* Estilo da seção principal */
@@ -153,5 +189,9 @@ footer {
         max-width: 100%; /* Largura total em telas pequenas */
         margin-left: 0;
         text-align: center; /* Centraliza o texto */
+    }
+
+    .social-buttons {
+        margin-right: 0; /* Remove a margem lateral em telas pequenas */
     }
 }
